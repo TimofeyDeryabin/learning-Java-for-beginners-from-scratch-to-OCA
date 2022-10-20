@@ -2,6 +2,26 @@ package homework.lesson4;
 
 public class Student {
 
+    Student(short studentId, String name, String surname, byte godObucheniya, double sredOchenkaMath, double sredOchenkaEconom,
+            double sredOchenkaInYazuk) {
+        this.studentId = studentId;
+        this.name = name;
+        this.surname = surname;
+        this.godObucheniya = godObucheniya;
+        this.sredOchenkaMath = sredOchenkaMath;
+        this.sredOchenkaEconom = sredOchenkaEconom;
+        this.sredOchenkaInYazuk = sredOchenkaInYazuk;
+    }
+
+    Student(short studentId, String name, String surname, byte godObucheniya) {
+        this(studentId, name, surname, godObucheniya, 0.0, 0.0,
+                0.0);
+    }
+
+    Student() {
+
+    }
+
     short studentId;
     String name;
     String surname;
@@ -24,6 +44,10 @@ class StudentTest {
         Student st1 = new Student();
         Student st2 = new Student();
         Student st3 = new Student();
+
+        Student st4 = new Student((short) 4, "Igor", "Kolmykov", (byte) 5, 5.75, 3.52,
+                6.83);
+        Student st5 = new Student((short) 5, "Vanya", "Frolov", (byte) 3);
 
         st1.studentId = 1;
         st1.name = "Ivan";
