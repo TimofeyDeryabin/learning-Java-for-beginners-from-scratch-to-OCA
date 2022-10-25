@@ -10,16 +10,16 @@ public class Car {
 
 
     String color;
-    int a = 10;
+    public static int ab = 10;
     String engine;
-    static int count;
+    public static int count;
 
     public static void changeA(int b) {
         Car c = new Car("black", "V8");
-        c.a = b;
+        c.ab = b;
     }
 
-    Car(String color, String engine) {
+    public Car(String color, String engine) {
         count++;
         this.color = color;
         this.engine = engine;

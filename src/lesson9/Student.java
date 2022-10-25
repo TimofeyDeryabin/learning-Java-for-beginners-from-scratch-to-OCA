@@ -2,6 +2,11 @@ package lesson9;
 
 public class Student {
 
+    int a = 10;
+    int b = this.a;
+    public static int c = 5;
+    public int z = this.c;
+    static int f = c;
 }
 
 class StudentTest {

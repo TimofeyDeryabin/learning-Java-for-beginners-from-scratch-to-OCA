@@ -18,7 +18,7 @@ public class Student {
                 0.0);
     }
 
-    Student() {
+    public Student() {
 
     }
 
