@@ -5,7 +5,7 @@ public class Lesson15 {
         int chas = 0;
         OUTER:
         while (chas <= 6) {
-            int minuta = 0;
+            int minuta = -1;
             MIDDLE:
             do {
                 minuta++;
